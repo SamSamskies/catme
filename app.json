@@ -1,0 +1,6 @@
+{
+  "name": "CATME YO App",
+  "description": "API to used to receive YOs sent to CATME. Replies to YOs with a YO containing a cat picture embedded in it.",
+  "repository": "https://github.com/samsamskies/catme",
+  "keywords": ["YO", "cats", "funny", "gif"]
+}
