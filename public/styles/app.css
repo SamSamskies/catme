@@ -1,3 +1,19 @@
+body {
+  background-color: #9B59B6;
+}
+
+h1, h3, p {
+  color: white;
+}
+
+a {
+  color: #333;
+}
+
+a img {
+  margin: 10px;
+}
+
 iframe {
   margin: 20px auto;
 }
