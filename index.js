@@ -14,7 +14,7 @@ app.get('/', function(req, res) {
   });
 });
 
-app.get('/yo', function(req, res) {
+app.get('/yo-' + process.env.CATME_YO_SECRET, function(req, res) {
   yo.yo_link(req.query.username, 'http://thecatapi.com/api/images/get', function() {
     res.send();
   });
