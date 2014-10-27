@@ -5,10 +5,19 @@ var app = express();
 
 app.set('port', (process.env.PORT || 5000));
 app.use(express.static(__dirname + '/public'));
+app.set('views', __dirname + '/views')
+app.set('view engine', 'jade')
 
-app.get('/yo', function(req, res, next) {
-  yo.yo_link(req.query.username, 'http://thecatapi.com/api/images/get');
-  res.send();
+app.get('/', function(req, res) {
+  yo.subscribers_count(function(err, undefined, body) {
+    res.render('index', { subscriberCount: JSON.parse(body).result });
+  });
+});
+
+app.get('/yo', function(req, res) {
+  yo.yo_link(req.query.username, 'http://thecatapi.com/api/images/get', function() {
+    res.send();
+  });
 });
 
 app.listen(app.get('port'), function() {

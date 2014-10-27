@@ -1,0 +1,13 @@
+iframe {
+  margin: 20px auto;
+}
+
+.container {
+  width: 780px;
+  text-align: center;
+}
+
+.main-copy {
+  text-align: left;
+  margin: 20px 0;
+}

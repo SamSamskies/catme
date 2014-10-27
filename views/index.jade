@@ -1,0 +1,34 @@
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    title CATME - Cat pics on demand
+    link(href='//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css', rel='stylesheet')
+    link(rel="stylesheet", href="/styles/app.css")
+  body
+    .container
+      h1 Send a YO to CATME and make a difference.
+      h3 You'll also get a random cat pic in retrun.
+      img(src='http://media.tumblr.com/tumblr_lzdmymX2p11r5wjw0.jpg')
+
+      .main-copy
+        p There is currently a Yo App contest with a cash prize of $5,000. The app with the most user's by Nov. 25th wins. You are considered a user when you send a YO to CATME. More info about the contest here:
+          a(href="http://yoapp.challengepost.com/")  http://yoapp.challengepost.com/
+
+        p I plan to donate the entire cash prize of $5,000 to an awesome organization called Pathways Togo if I win. You can read more about Pathways Togo here:
+          a(href="http://www.pathwaystogo.org/")  http://www.pathwaystogo.org/
+
+      iframe(width='640', height='360', src='//www.youtube.com/embed/aursaM6Axe0?list=UULJ3M9ZrwkgRB7YwQfnQ0CQ', frameborder='0', allowfullscreen='allowfullscreen')
+
+      h1 Current CATME user count: #{subscriberCount}
+
+      hr
+      p Links to download the YO App:
+      a(href='https://itunes.apple.com/app/Yo./id834335592?mt=8')
+        img(src='https://yoapp.s3.amazonaws.com/yo/yoios.png?height=17&width=50', width='300', height='100')
+      a(href='https://play.google.com/store/apps/details?id=com.justyo')
+        img(src='https://yoapp.s3.amazonaws.com/yo/yoandroid.png', width='300', height='100')
+      a(href='http://www.amazon.com/Life-Before-Us-LLC-Yo/dp/B00L8RPV8K/')
+        img(src='https://yoapp.s3.amazonaws.com/yo/amazon@2x.png', width='300', height='100')
+      a(href='http://www.windowsphone.com/en-us/store/app/just-yo/5653a21d-3739-4d12-ab82-b389b06ffae9')
+        img(src='https://yoapp.s3.amazonaws.com/yo/windows@x2.png', width='300', height='100')
+

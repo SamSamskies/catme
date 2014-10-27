@@ -4,11 +4,12 @@
   "description": "API to used to receive YOs sent to CATME. Replies to YOs with a YO containing a cat picture embedded in it.",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon --watch index.js index.js"
+    "start": "nodemon --watch index.js --watch public index.js"
   },
   "dependencies": {
     "express": "~4.9.x",
-    "yo-api": "^1.0.0"
+    "yo-api": "^1.0.0",
+    "jade": "*"
   },
   "engines": {
     "node": "0.10.x"
